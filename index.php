@@ -1,13 +1,14 @@
 <?php
-    include ("home.php");
-    $response = validation ($_POST);
-    foreach ($response as $key => $value){
-        if(!$value["isValid"]) {
-            echo "<li>";
-            echo $key . " " . $value["message"];
-            echo "</li>";
-        }
-    }    
+include ("home.php");
+if (isset($resp) && !empty($resp) ){
+    echo "<ul>";
+    foreach ($resp as $key => $value){
+        echo "<li>";
+        echo $value;
+        echo "</li>";
+    }
+    echo "</ul>";
+}
 ?>
 
 <!DOCTYPE html>
