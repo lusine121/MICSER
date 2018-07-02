@@ -17,6 +17,7 @@ class Framework {
     }
 
 
+    // Initialization
     private static function init() {
 // Define path constants
 
